@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">User Management Dashboard</h1>
+        <button id="addUserButton" class="btn btn-add">+ Add User</button>
+        <table id="userTable" class="user-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div id="pagination" class="pagination"></div>
+    </div>
+    <div id="userModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Add User</h2>
+            <form id="userForm" class="form-space">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" placeholder="Enter first name" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" placeholder="Enter last name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter email" required>
+
+                <label for="department">Department:</label>
+                <input type="text" id="department" placeholder="Enter department" required>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-save">Save</button>
+                    <button type="button" id="closeModal" class="btn btn-cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
